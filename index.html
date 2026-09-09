@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For Sara Laine ♡</title>
+<meta name="description" content="A little collection of letters and memories for Sara Laine.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&family=Parisienne&display=swap');
+:root{--pink:#f5c9d8;--deep:#9d5270;--ink:#49343d;--soft:#fce8ef;--rose:#e99ab8;--line:#edcbd7}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);background:radial-gradient(circle at 10% 10%,rgba(245,201,216,.55),transparent 28%),radial-gradient(circle at 90% 25%,rgba(252,232,239,.8),transparent 25%),linear-gradient(180deg,#fff8fb,#fffdfc 50%,#fff6fa);font-family:"DM Sans",system-ui,sans-serif}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.23;background-image:radial-gradient(#b66d89 .6px,transparent .6px);background-size:18px 18px}
+a{color:inherit;text-decoration:none}
+.hero{min-height:100vh;display:grid;place-items:center;text-align:center;padding:40px 20px;position:relative;overflow:hidden}
+.hero-inner{max-width:850px;position:relative;z-index:2}
+.kicker,.eyebrow{letter-spacing:.22em;text-transform:uppercase;font-size:.72rem;color:var(--deep);font-weight:600}
+h1{font-family:"Parisienne",cursive;font-size:clamp(4rem,12vw,8rem);font-weight:400;margin:18px 0 0;color:#a75575}
+.hero p{font-family:"Cormorant Garamond",serif;font-size:clamp(1.25rem,3vw,1.7rem);max-width:600px;margin:10px auto 30px}
+.heart{display:inline-block;color:#d9789d;font-size:1.3rem;animation:float 3s ease-in-out infinite}
+.cta{display:inline-flex;gap:9px;padding:13px 22px;border-radius:999px;background:#a95777;color:white;font-weight:600;box-shadow:0 12px 30px rgba(157,82,112,.18);transition:.25s}
+.cta:hover{transform:translateY(-3px)}
+.floating{position:absolute;color:#eaa5bd;opacity:.65;font-size:24px;animation:float 5s ease-in-out infinite}
+.f1{left:10%;top:20%}.f2{right:13%;top:17%;animation-delay:1s}.f3{left:18%;bottom:18%;animation-delay:2s}.f4{right:18%;bottom:23%;animation-delay:.5s}
+@keyframes float{50%{transform:translateY(-10px) rotate(4deg)}}
+.section{max-width:1050px;margin:auto;padding:90px 22px}
+.section-title{text-align:center;margin-bottom:55px}
+h2{font-family:"Cormorant Garamond",serif;font-size:clamp(2.5rem,6vw,4rem);margin:8px 0;color:#704455}
+.subtitle{max-width:650px;margin:auto;line-height:1.7;color:#775d67}
+.timeline{position:relative;max-width:850px;margin:auto}
+.timeline:before{content:"";position:absolute;left:21px;top:0;bottom:0;width:2px;background:var(--line)}
+.timeline-item{position:relative;padding:0 0 42px 70px}
+.dot{position:absolute;left:12px;top:3px;width:20px;height:20px;border-radius:50%;background:#fff;border:5px solid var(--rose);box-shadow:0 0 0 6px rgba(233,154,184,.12)}
+.timeline-date{color:var(--deep);font-family:"Cormorant Garamond",serif;font-size:1.55rem}
+.timeline-link{color:#a95777;font-size:.9rem}
+.letters{display:grid;gap:22px;max-width:850px;margin:auto}
+.letter-card{background:rgba(255,255,255,.78);border:1px solid var(--line);border-radius:24px;padding:25px 26px;box-shadow:0 12px 35px rgba(120,65,85,.07);transition:.3s}
+.letter-card:hover{transform:translateY(-3px);box-shadow:0 18px 45px rgba(120,65,85,.11)}
+.letter-top{display:flex;justify-content:space-between;gap:20px;color:#9b7481;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase}
+.letter-card h3{font-family:"Cormorant Garamond",serif;font-size:2rem;margin:10px 0 16px;color:#684252}
+.open-letter{border:0;background:var(--soft);color:#92516e;border-radius:999px;padding:10px 15px;font:inherit;font-weight:600;cursor:pointer}
+.letter-body{margin-top:25px;padding:25px 5px 4px;border-top:1px dashed var(--line);font-family:"Cormorant Garamond",serif;font-size:1.18rem;line-height:1.75}
+.letter-body p{margin:0 0 1.2em}
+.memory-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+.polaroid{background:#fff;padding:13px 13px 22px;box-shadow:0 14px 35px rgba(90,50,65,.13);transform:rotate(-1.5deg);transition:.3s;border:1px solid #f1e5e8}
+.polaroid:nth-child(even){transform:rotate(1.7deg)}.polaroid:hover{transform:rotate(0) scale(1.02)}
+.polaroid img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}.polaroid:nth-child(2) img{aspect-ratio:4/3}
+.caption{font-family:"Parisienne",cursive;color:#865268;font-size:1.5rem;padding:10px 5px 0;text-align:center}
+.final{min-height:80vh;display:grid;place-items:center;text-align:center;padding:90px 20px}
+.final-inner{max-width:720px}.final h2{font-family:"Parisienne",cursive;font-weight:400;font-size:clamp(3.5rem,10vw,6.5rem);color:#a75575}
+.final p{font-family:"Cormorant Garamond",serif;font-size:1.45rem;line-height:1.7}
+.signature{font-family:"Parisienne",cursive;color:#a75575;font-size:2.2rem;margin-top:35px}
+footer{text-align:center;padding:25px;color:#a17b88;font-size:.78rem}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}.reveal.show{opacity:1;transform:none}
+@media(max-width:700px){.section{padding:70px 17px}.memory-grid{grid-template-columns:1fr}.letter-top{flex-direction:column;gap:5px}.letter-card{padding:21px;border-radius:20px}.letter-card h3{font-size:1.75rem}}
+</style>
+</head>
+<body>
+<header class="hero">
+<span class="floating f1">♡</span><span class="floating f2">✦</span><span class="floating f3">♡</span><span class="floating f4">✧</span>
+<div class="hero-inner">
+<div class="kicker">A little collection of letters</div>
+<h1>For Sara Laine</h1>
+<p>the things i wrote down because i didn't want the little moments, thoughts, and words to disappear.</p>
+<div class="heart">♡</div><br><br>
+<a class="cta" href="#timeline">Open the letters <span>→</span></a>
+</div>
+</header>
+
+<section class="section" id="timeline">
+<div class="section-title reveal"><div class="eyebrow">The timeline</div><h2>A few dates I want to remember</h2><p class="subtitle">Every letter, in the order you gave them.</p></div>
+<div class="timeline">
+    <div class="timeline-item reveal">
+      <span class="dot"></span>
+      <div class="timeline-date">August 5, 2026</div>
+      <a class="timeline-link" href="#letter-1">read →</a>
+    </div>
+    
+    <div class="timeline-item reveal">
+      <span class="dot"></span>
+      <div class="timeline-date">August 10, 2026</div>
+      <a class="timeline-link" href="#letter-2">read →</a>
+    </div>
+    
+    <div class="timeline-item reveal">
+      <span class="dot"></span>
+      <div class="timeline-date">August 15, 2026</div>
+      <a class="timeline-link" href="#letter-3">read →</a>
+    </div>
+    
+    <div class="timeline-item reveal">
+      <span class="dot"></span>
+      <div class="timeline-date">August 24, 2026</div>
+      <a class="timeline-link" href="#letter-4">read →</a>
+    </div>
+    
+    <div class="timeline-item reveal">
+      <span class="dot"></span>
+      <div class="timeline-date">August 29, 2026</div>
+      <a class="timeline-link" href="#letter-5">read →</a>
+    </div>
+    </div>
+</section>
+
+<section class="section" id="letters">
+<div class="section-title reveal"><div class="eyebrow">The actual letters</div><h2>Things I wrote to you</h2><p class="subtitle">Your words, kept as they were written.</p></div>
+<div class="letters">
+    <article class="letter-card reveal" id="letter-1">
+      <div class="letter-top">
+        <span>LETTER 01</span>
+        <span>August 5, 2026</span>
+      </div>
+      <h3>August 5, 2026</h3>
+      <button class="open-letter" type="button" aria-expanded="false">Open letter <span>♡</span></button>
+      <div class="letter-body" hidden><p>i know ive already asked about this before, but i just wanna say it properly because i want u to know i&#x27;m serious.</p><p>i&#x27;d like to ask if you&#x27;d be willing to let me court u again.</p><p>the reason u made me stopped before was because everything felt stressful, and if u do give me another chance, i don&#x27;t want u to feel pressured, obligated, or like u have to give me anything back and if u do feel a bit pressured u can always let me know, i will adjust.</p><p>i just wanna be someone who makes your days a little lighter instead of heavier. i wanna support u while u chase your goals, celebrate your wins, be there on your hard days, support you in days when things might get a bit heavy, i don&#x27;t care how far apart we are I&#x27;ll do everything that i can to try and support you i can promise you that, and i just want to show u the kind of person i can be. i don&#x27;t need things to move fast. honestly, i&#x27;m more than happy to take things at whatever pace makes u comfortable.</p><p>i&#x27;m asking again because my feelings for u never really changed. when u rejected me ngl, in my head i respected your decision but i knew deep down in myself, i wouldn&#x27;t stop trying to care for you. i know good things take time, and if it takes time to earn your full trust, then i&#x27;ll gladly put in that time and effort.</p><p>there&#x27;s no pressure to answer right away. take all the time u need. and if your answer is still no, i&#x27;ll respect it just like i did before. i just didn&#x27;t want u to ever question how serious i am about this because i really am.</p><p>so... sara laine, will u let me court u again? :)))</p></div>
+    </article>
+    
+    <article class="letter-card reveal" id="letter-2">
+      <div class="letter-top">
+        <span>LETTER 02</span>
+        <span>August 10, 2026</span>
+      </div>
+      <h3>August 10, 2026</h3>
+      <button class="open-letter" type="button" aria-expanded="false">Open letter <span>♡</span></button>
+      <div class="letter-body" hidden><p>hello there sara laine, starfire, tiger, princess sara</p><p>im writing this because uhm im bored and I truly do miss you so much, also I want u to read something from me from ur lunch kung coconnect ka kay gabo or tom when u arrive at UP and connect to the wifi so js read this whenever u want!!!! I just wanted to tell you that I truly do appreciate the chance that you&#x27;ve given me to court you again and uhm yeah ik that we both have complicated pasts and situations, and I know that things aren&#x27;t always gonna be easy but I&#x27;m genuinely just really happy that you decided to give me another chance I really do hope that I can get to know you more this time</p><p>and hopefully gain your trust little by little, I know that I can&#x27;t just ask for your trust and expect you to give it to me right away, I have to earn it and I&#x27;m more than willing to do that. I don&#x27;t wanna rush anything between us, I just wanna enjoy getting to know you and hopefully show you that I really do mean everything that I say</p><p>and while im here I might as well tell you how much I genuinely like everything about you because why not  I love your smile so much, I don&#x27;t think you realize how pretty you look whenever you smile, especially when you&#x27;re genuinely happy. there&#x27;s just something about it that makes me wanna keep looking at you</p><p>I love the way you talk too, even when you&#x27;re just telling me random things or yapping about whatever happened during your day, I genuinely like listening to you. I could probably listen to you talk for hours and still want you to keep going, even when I don&#x27;t understand half of what you&#x27;re saying sometimes</p><p>and your eyes sara laine, I genuinely love the way your eyes look at me whenever we&#x27;re talking, I don&#x27;t even know how to explain it properly but there&#x27;s just something about the way you look at me that I really really like. sometimes I forget what I was even gonna say because I get distracted looking at you and honestly you just look like an angel to me, I know that sounds so cheesy and u know i got that from star wars but that&#x27;s genuinely how I see you.</p><p>it&#x27;s not even just because you&#x27;re pretty, it&#x27;s the way you smile, the way you laugh, the way you talk, the little expressions you make, the way you get excited about things, even the way you get annoyed sometimes. I just really like seeing you be you</p><p>I really appreciate all the little things about you too, even the things that you probably don&#x27;t think much about. the stories you tell me, the way you let me see different sides of you. I really do appreciate all of it and I&#x27;m just really happy that I get to experience those things with you</p><p>and I also wanna thank you for understanding the situation with my ex. I know that isn&#x27;t exactly the easiest thing to understand and I know it could&#x27;ve made things weird between us, so I really do appreciate you hearing me out and trying to understand where I&#x27;m coming from. I really hope that it doesn&#x27;t affect what we have now because I don&#x27;t want something from my past to get in the way of whatever we&#x27;re trying to build now. that chapter is something I&#x27;ve already made peace with and I just wanna focus on what&#x27;s in front of me now and right now that&#x27;s you I really don&#x27;t wanna waste the chance you&#x27;ve given me again, sara.</p><p>I dont expect you to suddenly trust me completely or feel the same way I do, I just want the chance to show you slowly that I really do mean everything I say and that I&#x27;m willing to put in the effort to make this work also please be safe</p><p>going to UP  I know you&#x27;re probably gonna be busy and tired and everything so please take care of yourself, eat properly and don&#x27;t overwork yourself too much. I genuinely wanna see you excel there sobraaaaaa and I know you&#x27;re capable of so much, I&#x27;ll always be cheering for you even if I&#x27;m not there with you. I hope your first days there go well and I hope you meet good people, make good memories and actually enjoy your time there.</p><p>anyway I think I&#x27;ve said enough na, I just wanted you to have something from me to read whenever you feel like it. you don&#x27;t have to reply to everything here or anything, I justwanted you to know what&#x27;s been going through my head take care always sara laine, I miss you so so much already even though we literally was js tgt like 2 hours ago and I&#x27;m really really grateful that I get to try again see u soon sara laineeeee :))</p></div>
+    </article>
+    
+    <article class="letter-card reveal" id="letter-3">
+      <div class="letter-top">
+        <span>LETTER 03</span>
+        <span>August 15, 2026</span>
+      </div>
+      <h3>August 15, 2026</h3>
+      <button class="open-letter" type="button" aria-expanded="false">Open letter <span>♡</span></button>
+      <div class="letter-body" hidden><p>hi there sara laine sorry it took so long i just am very very very indecisive on what to say kasi like it&#x27;s hard to describe how fucking gorgeous, beautiful, cute, pretty, stunning, attractive, hot, eye-catching, jaw dropping, flawless, breathtaking, mesmerizing, captivating, unreal, heavenly, perfect, and combine all the synonyms for beautiful and it still won&#x27;t be enough i swear kaya even though this will be long as fuck. I know for a fact that there will never be enough words to describe what you look like and I&#x27;ll probably have to create a completely new word just to describe you properly, well the closest word is ineffable but I&#x27;m still not satisfied with that word, it&#x27;s just not enough. It doesn&#x27;t even come close to describing how you look, how you carry yourself, how you smile, how you exist, and somehow manage to look fucking gorgeous without even trying.</p><p>and honestly it&#x27;s not even just about how you look because if it was just your looks then maybe i could eventually find enough words, but you&#x27;re literally so much more than that. your strongest feature isn&#x27;t your eyes, your smile, your face, your hair, your body, or anything physical about you. your strongest feature is literally just being you. like somehow just you being you is enough to make my entire day so much better.</p><p>you could literally do absolutely nothing and somehow my day is already better just because you&#x27;re there. you could send me the most random message, say the dumbest shit, talk about absolutely nothing, and i&#x27;d still be sitting there thinking about how lucky i am to experience even a tiny part of your life I thank God for it everyday tbh. and i don&#x27;t think you realize how much i&#x27;d genuinely do just to be with</p><p>you, even if it&#x27;s only for like 30 seconds. literally 30  seconds. if those 30 seconds meant i get to see you, talk to you, hear your voice, or just be beside you for a little while, i&#x27;d take it without even thinking twice. nung hinatid kita at 3 ngl it was so so so worth it, its my pleasure to just to pick you up and hatid you home honestly i&#x27;d do it again. and again. and again. kahit 3am pa yan, kahit sobrang late, kahit pagod ako, kahit inconvenient, i genuinely wouldn&#x27;t care because it&#x27;s you. being able to make sure you&#x27;re okay and get you home safely isn&#x27;t something i&#x27;d ever see as a burden. it&#x27;s genuinely my pleasure. i&#x27;d do it for you because i want to, and because knowing you&#x27;re safe and okay is already enough for me. You saying u appreciate me makes it so much more worth it than all the money in the world.</p><p>and i swear there&#x27;s something about you that makes me want to become better so badly. like you make me want to improve myself, not because you ever told me i&#x27;m not enough, but because you&#x27;re someone who makes me want to become the best version of myself just so i can show you that you&#x27;re worth every bit of effort. i want to become better just so i can give you the kind of love and treatment that someone as amazing as you deserves. i want to improve because i want you to feel how important you are to me. i want you to feel appreciated, wanted, admired, respected, and loved in every possible way. i want to make you feel like the most precious woman in the entire fucking world because in my eyes, you genuinely are.</p><p>and maybe that&#x27;s why i struggle so much to write this because every time i try to explain what i feel about you, it feels like i&#x27;m trying to fit an entire universe into a few paragraphs. there&#x27;s always another thing i want to say, another</p><p>reason i admire you, another little thing about you that makes me smile, another reason why i think you&#x27;re beautiful. i could literally sit here for hours listing every single synonym for beautiful and i&#x27;d still feel like i haven&#x27;t even started.</p><p>you&#x27;re beautiful when you&#x27;re dressed up, you&#x27;re beautiful when you&#x27;re tired, you&#x27;re beautiful when you&#x27;re not even trying, you&#x27;re beautiful when you&#x27;re laughing, you&#x27;re beautiful when you&#x27;re being annoying, you&#x27;re beautiful when you&#x27;re serious, you&#x27;re beautiful when you&#x27;re talking about something you&#x27;re passionate about, and you&#x27;re beautiful simply because you&#x27;re you. there&#x27;s genuinely no version of you that i look at and think isn&#x27;t beautiful.</p><p>and i hope you know that whenever i say you&#x27;re gorgeous, i don&#x27;t just mean it as some random compliment. i mean that i genuinely look at you and struggle to understand how someone can look like that and still exist in the same world as me. like how the fuck am i supposed to act normally when you look like THAT</p><p>but more than anything, i hope you know that i don&#x27;t just want to admire you. i want to be there for you. i want to be someone you can rely on, someone who will show up, someone who will go to the office at 3 just to pick you up and hatid you home without making you feel like you&#x27;re asking for too much. i&#x27;d do it every single time and i&#x27;d still consider it my pleasure because getting to be there for you is something i&#x27;ll never complain about.</p><p>you make my days better in ways you probably don&#x27;t even realize, and you make me want to be better in ways i never expected. so if i ever seem like i&#x27;m trying too hard, or if i seem like i&#x27;m putting too much effort into something, it&#x27;s probably because i genuinely believe you&#x27;re worth it. you&#x27;re worth the effort, the time, the sleepless nights, the 3am trips, the stupidly long messages, the overthinking, the trying, the improving, literally all of it.</p><p>and after all of that, i still somehow feel like i haven&#x27;t said enough.</p><p>so yeah, sara laine, if there is ever a word invented that is somehow more beautiful than every word for beautiful combined, i&#x27;ll probably use that one for you too. but until then, i&#x27;ll just keep calling you gorgeous, beautiful, cute, pretty, stunning, attractive, hot, eye-catching, jaw dropping, flawless, breathtaking, mesmerizing, captivating, unreal, and every other fkin word i can find. because somehow, even all of them combined still don&#x27;t feel like enough for you. And also what do you think of sairi as a nickname?</p></div>
+    </article>
+    
+    <article class="letter-card reveal" id="letter-4">
+      <div class="letter-top">
+        <span>LETTER 04</span>
+        <span>August 24, 2026</span>
+      </div>
+      <h3>August 24, 2026</h3>
+      <button class="open-letter" type="button" aria-expanded="false">Open letter <span>♡</span></button>
+      <div class="letter-body" hidden><p>hello der sara laine, so uhm im writing cause uhm i really do miss u like sobra and like once again, i wanna show how much i appreciate u and how much i underestimated u not being in the office. like i genuinely didn’t realize how much ur presence became a part of my everyday life until u weren’t there anymore. ang weird lang kasi dati parang normal lang na nandyan ka, and now that ur not, there&#x27;s js something missing in the office. alam mo ba ung sa tracker na sinisend ni cl maica my calls are under ur name and it kinda puts me off WAYYY more than it should cuz it just reminds me that ur not here enimore. :(</p><p>i miss the little things too, yung presence mo kahit wala naman tayong ginagawa, and even those small interactions that i probably didn’t appreciate enough before. i guess sometimes u only realize how important someone is when their absence becomes louder than their presence ever was. as I said earlier time feels so slow when ur not around, and it feels too fast when were together its not fair☹️☹️</p><p>and idk, maybe im just being sentimental rn, but i really want u to know that i appreciate u more than i probably ever showed. u have this way of making ordinary days feel a little lighter, and i think i took that for granted without even knowing it. ngayon ko lang narealize na thay u have quietly become part of my routine, part of my comfort, and somehow, part of what makes a place that supposed to feel like shit, feel like home.</p><p>so yeah, i miss u. sobra. and maybe this is just my little way of saying that i hope u know how much ur presence meant, and still means, to me. i guess i just underestimated how different everything would feel without u. and now that i know, i&#x27;ll do my best to surpass my best to try and appreciate the times we have tgt even more.</p></div>
+    </article>
+    
+    <article class="letter-card reveal" id="letter-5">
+      <div class="letter-top">
+        <span>LETTER 05</span>
+        <span>August 29, 2026</span>
+      </div>
+      <h3>August 29, 2026</h3>
+      <button class="open-letter" type="button" aria-expanded="false">Open letter <span>♡</span></button>
+      <div class="letter-body" hidden><p>hello there sara laineee, gorgeous, starfire, jaw dropper, uhm tiger, yea uhm im writing cuz i want to and it has been kind of a while since the last time i wrote, and you are now entering a stage in ur life that ur gonna be living in a far away place and ur college life is only gonna be like way more busy so i just want to let you know that no matter how busy you are I&#x27;ll always wait for you. I&#x27;ll always find a way to fit into ur day without being too much of an interference or anything with ur studies, u have a life and I have a life. I just hope that I&#x27;ll become a part of yours and you become a part of mine. i know we&#x27;re not at that point where i can say im gonna be beside you through every single thing life throws at you, and i dont wanna make promises that are way bigger than where we are right now. but i do want you to know that i&#x27;m serious about getting to know every single part of you, good and bad. i wanna see where this goes, and honestly, i hope it goes somewhere far. i know college is gonna bring you into a whole new chapter of your life. new people, new experiences, new problems, new memories, and probably a lot of days where you&#x27;ll be too busy to even realize what day it is. and i dont wanna be another thing you have to worry about or keep up with. i just wanna be someone you can make a little space for when you have the time. even if it&#x27;s just a random message, a call when you&#x27;re free🫣🫣,  a voice message telling me about something stupid that happened that day, or hearing about something you&#x27;re excited about. i dont need all of your time. i just want a little part of it, if you&#x27;ll let me have one. and honestly, i dont expect things to be easy. distance is distance and ur in gonna be in the middle of nowhere, life gets busy, people change, and there&#x27;s gonna be a lot of things neither of us can predict. but i think that&#x27;s also why i dont wanna rush anything. i&#x27;d rather just keep getting to know you, keep showing up, and let whatever we have grow naturally. i wanna know more versions of you. not just the girl i know right now, but the sara who&#x27;s gonna be starting college, the sara who&#x27;s gonna figure out new things about herself, the sara who&#x27;s gonna have good days and terrible days and everything in between. and if i&#x27;m lucky enough to still be around for those chapters, then i&#x27;d really love that.</p><p>i guess i just hope that when you think about the people who were there during this part of your life, i&#x27;ll be one of them. not someone who demands a place in your life, but someone who slowly earns one.</p><p>and if someday this turns into something more, then i&#x27;d be really happy that we took our time getting there. i don&#x27;t wanna force anything or put a label on something before we&#x27;re ready. i&#x27;d rather build something that actually means something to both of us.</p><p>so for now, i&#x27;ll just keep doing what i&#x27;ve been doing. i&#x27;ll keep getting to know you, keep annoying you, keep supporting you, keep making you smile whenever i can, and keep finding little ways to be part of your day without getting in the way of the life you&#x27;re building.</p><p>and evenwhen you&#x27;re far away (coco reference, goated movie btw), just remember that there&#x27;s someone here who&#x27;s still rooting for you. someone who wants to hear about your day, wants to see you do well, and wants to be around for as much of this new chapter as you&#x27;ll let him be.</p><p>i dont know exactly where this road is gonna take us, and maybe that&#x27;s the fun part. we dont have to know yet. i just know that i like where we&#x27;re going, and i&#x27;d really like to keep going with you.</p><p>so yea uhm that&#x27;s basically it. i just wanted to write something for you before you enter this whole new chapter of your life.</p><p>go be amazing, sara laine, more amazing than you already are. i&#x27;ll be here somewhere, probably bothering you from a distance, waiting for my updates and giving you mine too. and hopefully, even with all the distance and all the busyness, i&#x27;ll still get to have a little place in your days and hopefully, a big part throughout all your days.</p><p>I remember when we went out bowling in Eastwood and u had the biggest smile on ur face as u beat me by like 40 points and I&#x27;m js writing cause uhm I get scared sometimes yk, scared that someday I won&#x27;t get to see that smile anymore. That smile that&#x27;s worth more than all the treasures in this universe combined. It&#x27;s more beautiful than a night sky littered with billions of stars, it&#x27;s more beautiful than the largest field of flowers that one can imagine. I just truly pray to God that I can be the reason for it, and protect it for the rest of my life.</p><p>I wasn&#x27;t always like this you know. I was insecure, negative, full of hate, especially for myself. I genuinely didn&#x27;t see myself giving affection to anything and anyone after the breakup because as I said to both you and Gabo, I lost my feelings. I felt like a monster, a robot, something that didn&#x27;t have emotion, something that was no longer human.</p><p>While we were out, like on that night shift, though, I found myself opening up to u guys a lot. It&#x27;s something I&#x27;ve never really done except to my close friends, so it surprised me a bit that I was able to share all those things in my head that I couldn&#x27;t explain or put into words when I&#x27;m by myself. And while I was opening up to both of you, I just felt idk, connected to you? Idk either, but I just felt like there was more to you than what I see on the front.</p><p>But don&#x27;t get me wrong, I am DEFINITELY NOT COMPLAINING ON WHAT I SEE ON THE OUTSIDE. YOU ARE BEAUTIFUL SARA LAINEEEEE. And uhm yeah, that&#x27;s why I asked myself, like, are these feelings true or is it just because you&#x27;re near me everyday, we talk a lot, ur beautiful as fuck, smart as fuck, have really good political views on things, have dreams and actually want to build a stable future, can take opinions of others, doesn&#x27;t have a closed off mind that can&#x27;t be changed, and just genuinely has so many things that I admire in a person.</p><p>And I kept asking myself, can I actually commit to courting you? Can I actually be the person who gives you the love and affection that you deserve? Can I actually become someone who can stand beside you not just when things are easy, but especially when things aren&#x27;t? And well, u know the rest.</p><p>That&#x27;s basically the thought process on how I decided to court you. It wasn&#x27;t just some random feeling that I acted on. I thought about it a lot, probably more than I should&#x27;ve. I was scared too because I knew that if I let myself feel again, I&#x27;d also be giving someone the ability to hurt me again. But somehow, with you, I wanted to take that risk, you were worth a lot more than the risk.</p><p>And I truly do appreciate the chance you gave me. More than you probably realize. I promise you I&#x27;ll do better than the best that I can do to make u mine, but more importantly, I want to make sure that you feel loved, appreciated, respected, and safe with me. I don&#x27;t want to just say that I love you or that I care about you. I want to show it in the little things, in the way I listen to you, the way I remember the things you tell me, the way I support your dreams, and even in the way I stay when things aren&#x27;t perfect.</p><p>So uhm yeah, after courting u originally and a few mishaps on some things and courting u again, uhm yeah, I&#x27;ve changed for the better. Like WAY better. I&#x27;ve become more positive, I feel stronger mentally, more caring than I usually am, and honestly I feel like I became a version of myself that I didn&#x27;t even know I could be.</p><p>And I don&#x27;t want to take all the credit for that because I know at the end of the day, I had to choose to change myself. But you definitely became one of the reasons why I wanted to become better. You made me want to look at myself and ask, &quot;If I really care about this person, am I going to keep being the same person I was before?&quot; And the answer was no.</p><p>I don&#x27;t want to bring the person I used to be into whatever future we might have. I don&#x27;t want my insecurities, my negativity, or my past experiences to become something that hurts you. I know I&#x27;m still far from perfect and I know there will be times when I mess up, misunderstand things, get too emotional, or just straight up don&#x27;t know what I&#x27;m doing. But I want you to know that I&#x27;m willing to learn. I&#x27;m willing to listen. I&#x27;m willing to admit when I&#x27;m wrong and actually work on it.</p><p>Because I don&#x27;t want you only when it&#x27;s convenient for me. I want you when you&#x27;re happy, when you&#x27;re stressed, when you&#x27;re tired, when you&#x27;re confused, when you&#x27;re annoying as fuck, and even when you don&#x27;t know what you want. I want to be someone you can come home to, someone you can talk to without being scared that I&#x27;ll judge you, someone who will celebrate your wins like they&#x27;re my own and hold your hand through your losses.</p><p>And honestly, I don&#x27;t know what the future holds for us. I don&#x27;t know where life is going to take either of us, and I don&#x27;t want to make some unrealistic promise that everything will always be perfect because I know it won&#x27;t be. But what I can promise is that as long as I&#x27;m given the chance to be beside you, I&#x27;ll keep choosing you. I&#x27;ll keep trying.</p><p>You brought out a part of me that I thought was dead. You reminded me that I could still feel things deeply, that I could still care about someone without feeling like I&#x27;m losing myself, and that maybe I wasn&#x27;t really a monster or a robot after all. Maybe I was just hurt, and maybe I just needed someone who made me want to open that part of myself again.</p><p>And sara, I genuinely hope I get to see that smile a million more times. I hope I&#x27;m there when you accomplish the things you&#x27;ve been dreaming about. I hope I get to watch you grow into the person you want to become. I hope I get to annoy you for years, make stupid jokes with you, go on random trips with you, lose to you in bowling again even though I will NEVER admit that you are better than me (i do admit defeat tho), and make memories that we&#x27;ll look back on someday and laugh about.</p><p>I don&#x27;t know if words will ever be enough to explain how much you mean to me, but I&#x27;ll keep trying anyway.</p><p>So yeah, uhm, that&#x27;s it I guess. I just wanted you to know that I&#x27;m genuinely grateful for you. Grateful that you came into my life, grateful that you gave me a chance, grateful that you made me feel again, and most of all, grateful that somehow, out of all the people in this world, I got to meet you.</p><p>I appreciate you so much, Sara Laine for all the things you&#x27;ve done for me and how you&#x27;ve affected me. And if God allows it, I really do hope that I can be the reason behind that beautiful smile for a very, very long time.</p></div>
+    </article>
+    </div>
+</section>
+
+<section class="section" id="memories">
+<div class="section-title reveal"><div class="eyebrow">Little memories</div><h2>The moments in between</h2><p class="subtitle">Because the letters are only part of the story.</p></div>
+<div class="memory-grid">
+<figure class="polaroid reveal"><img src="images/sara.jpg" alt="A photo of Sara" loading="lazy"><figcaption class="caption">just you being you ♡</figcaption></figure>
+<figure class="polaroid reveal"><img src="images/bowling.jpg" alt="A bowling memory" loading="lazy"><figcaption class="caption">the 40-point defeat i will never forget</figcaption></figure>
+<figure class="polaroid reveal"><img src="images/mirror.jpg" alt="A mirror photo together" loading="lazy"><figcaption class="caption">one of the little moments</figcaption></figure>
+<figure class="polaroid reveal"><img src="images/little-things.jpg" alt="Little gifts and keepsakes" loading="lazy"><figcaption class="caption">little things that became memories</figcaption></figure>
+</div>
+</section>
+
+<section class="final">
+<div class="final-inner reveal"><div class="eyebrow">And finally...</div><h2>If you ever wonder why</h2>
+<p>I guess this is my little way of keeping the things I don't want to forget. The conversations, the random moments, the stupid jokes, the memories, the things I was too shy to say out loud — and you.</p>
+<p>Thank you for being part of my life, Sara Laine.</p><div class="signature">♡</div></div>
+</section>
+<footer>made with a little too much pink and a lot of feelings ♡</footer>
+
+<script>
+document.querySelectorAll(".open-letter").forEach(button => {
+  button.addEventListener("click", () => {
+    const body = button.nextElementSibling;
+    const closing = !body.hidden;
+    body.hidden = closing;
+    button.setAttribute("aria-expanded", String(!closing));
+    button.innerHTML = closing ? 'Open letter <span>♡</span>' : 'Close letter <span>♡</span>';
+  });
+});
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){entry.target.classList.add("show");observer.unobserve(entry.target);}
+  });
+},{threshold:.12});
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
